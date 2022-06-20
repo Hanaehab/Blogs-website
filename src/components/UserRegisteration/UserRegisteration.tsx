@@ -25,7 +25,7 @@ const UserRegisteration : React.FC = () => {
     
     try {
         await axios.post<CreateUserResponse>(
-        'http://localhost:8000/blogs/user/', user.user).then((res) => navigate("/login"))
+        'http://localhost:8000/blogs/user/', user.user).then((res) => navigate("/"))
         .catch(() => setError(() => true));
     } catch (err) {
       alert(err);

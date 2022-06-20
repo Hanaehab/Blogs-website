@@ -111,7 +111,7 @@ const UserPosts = (props : any) => {
                   
                   <Typography variant="h5" style={{ marginBottom: "2%" }}>
                   
-                      {post.user.firstName}
+                      {post.user.firstName} {post.user.lastName}
                     </Typography>
                   </Grid>
                   <Grid item md={3}>
@@ -153,7 +153,8 @@ const UserPosts = (props : any) => {
                   <AccountCircle style={{fontSize: 30, marginRight: "5%" }}/>
                   </Grid>
                   <Grid item md={7} style={{ paddingLeft: "0%", marginTop: "1.5%"  }}>
-                  <Typography style={{ marginBottom: "2%",fontSize: 16 }}>Static
+                  <Typography style={{ marginBottom: "2%",fontSize: 16 }}>  
+                  {comment.user.firstName}  {comment.user.lastName}
                   </Typography>
                   </Grid>
                   <Grid item md={3}>
